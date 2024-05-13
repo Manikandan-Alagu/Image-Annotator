@@ -145,11 +145,11 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue=gr.themes.colors.purple)
 
     gr.Markdown("## Image Examples")
     gr.Examples(
-        examples=[os.path.join(os.path.abspath(''), "city.jpg"), 
-                  os.path.join(os.path.abspath(''), "household.jpg"), 
-                  os.path.join(os.path.abspath(''), "industry.jpg"),
-                  os.path.join(os.path.abspath(''), "retail.jpg"),
-                  os.path.join(os.path.abspath(''), "aerodefence.jpg")],
+        examples=[os.path.join(os.path.abspath(''), "image/city.jpg"), 
+                  os.path.join(os.path.abspath(''), "image/household.jpg"), 
+                  os.path.join(os.path.abspath(''), "image/industry.jpg"),
+                  os.path.join(os.path.abspath(''), "image/retail.jpg"),
+                  os.path.join(os.path.abspath(''), "image/aerodefence.jpg")],
         inputs=image_input,
         outputs=image_output,
         fn=annotator,
